@@ -18,4 +18,4 @@ GitHub App can access.
 
 ### Key Points
 - The agent parses POST requests sent from the GitHub App in `src/agent_server.py` and formats agent responses when sending return requests
-- 
+- Links to diagrams and the status of repository loading are variably clickable (due to GitHub App formatting)
