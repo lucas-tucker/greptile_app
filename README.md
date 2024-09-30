@@ -8,7 +8,8 @@ This is an endpoint for a ChatGPT agent equipped with the following tools:
 - generate_diagram_tool.py: generates a diagram using Eraser.io's DiagramGPT based on conversation context
 
 The agent uses these tools at its discretion to index, query, and diagram repositories both you and your
-GitHub App can access.
+GitHub App can access. API calls are made behind the scenes and the user gets to access this functionality
+directly in their IDE.
 
 ### How to run
 1. Clone this repo
