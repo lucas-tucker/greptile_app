@@ -6,6 +6,7 @@ This is an endpoint for a ChatGPT agent equipped with the following tools:
 - load_repo_tool.py: loads repository via Greptile API call
 - query_repo_tool.py: queries the repository via Greptile API call
 - generate_diagram_tool.py: generates a diagram using Eraser.io's DiagramGPT based on conversation context
+
 The agent uses these tools at its discretion to index, query, and diagram repositories both you and your
 GitHub App can access.
 
@@ -22,3 +23,4 @@ GitHub App can access.
 ### Key Points
 - The agent parses POST requests sent from the GitHub App in `src/agent_server.py` and formats agent responses when sending return requests
 - Links to diagrams and the status of repository loading are variably clickable (due to GitHub App formatting)
+- `agent_server.py` handles the request logic, while `agent.py` defines the OpenAI agent executor itself
